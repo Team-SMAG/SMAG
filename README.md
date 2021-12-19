@@ -27,5 +27,5 @@ __Client__ <br>
 게임 플레이 담당 <br>
 개발 : Unity, C# <br>
 __Server__ <br>
-API 제공 및 AI 연산부분 담당 <
+API 제공 및 AI 연산부분 담당 <br>
 개발 : AWS, Python (Django)
