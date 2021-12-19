@@ -21,3 +21,11 @@ master branch : pull request 후 merge 로 진행한다. <br>
 develop branch : TBD <br>
 (이 외에 필요하다면, 별도의 브랜치 생성) <br><br>
 항상 git pull 을 통해 로컬을 최신화하고 작업하는 습관을 가집시다. <br><br>
+
+## 클라이언트 및 서버 관련 
+__Client__ <br>
+게임 플레이 담당 <br>
+개발 : Unity, C# <br>
+__Server__ <br>
+API 제공 및 AI 연산부분 담당 <
+개발 : AWS, Python (Django)
