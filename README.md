@@ -25,7 +25,8 @@ develop branch : TBD <br>
 ## 클라이언트 및 서버 관련 
 __Client__ <br>
 게임 플레이 담당 <br>
-개발 : Unity, C# <br><br>
+개발 : Unity, C# <br>
+출시 목표 플랫폼 : Window, Android, IOS <br><br>
 __Server__ <br>
 API 제공 및 AI 연산부분 담당 <br>
 개발 : AWS, Python (Django)
