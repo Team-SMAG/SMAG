@@ -20,7 +20,11 @@ develop branch : TBD <br>
 (이 외에 필요하다면, 별도의 브랜치 생성) <br><br>
 항상 git pull 을 통해 로컬을 최신화하고 작업하는 습관을 가집시다. <br><br>
 
-## 작업 분류
+## Workflow
+주 1회 화상회의를 통한 Weekend 작업 현황 보고 <br>
+개인 작업 및 디테일한 내용은 Private Repository 로 관리 <br>
+학습한 내용은 잘 정리해서 공유할 예정 (TBD) <br><br>
+
 __Client__ <br>
 게임 플레이 담당 <br>
 개발 : Unity, C# <br>
