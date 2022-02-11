@@ -34,7 +34,7 @@ API 제공 및 AI 연산부분 담당 <br>
 개발 : AWS, Java, Spring <br>
 AI : Rule-Based (no machine learning) <br><br>
 
-## 최종 현황
+## 최종 제출 결과
 지원하는 플랫폼 : Windows 7/10 <br>
 수상 : 장려상 <br>
 ![AI게임공모전_장려상](https://user-images.githubusercontent.com/50026903/153565414-6236ed34-6127-482c-b7e3-9d856cc3d6c2.png) <br>
