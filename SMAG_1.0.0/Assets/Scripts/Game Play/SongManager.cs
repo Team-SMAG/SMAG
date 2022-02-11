@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
+using Melanchall.DryWetMidi.Common;
 using System.IO;
 using UnityEngine.Networking;
 using System;
@@ -13,7 +14,7 @@ public class SongManager : MonoBehaviour
     public AudioSource audioSource;
     public Lane[] lanes;
     public static MidiFile midiFile;
-    public float songDelayInSeconds;
+    public float songDelayInSeconds = 0f;
     public double marginOfError;    //Seconds Unit
     public int inputDelayInMilliseconds;
     public string fileLocation;
@@ -40,6 +41,7 @@ public class SongManager : MonoBehaviour
         }
         
         ReadFromFile();
+        //ReadFromFileNone();
     }
     
     void Update()
@@ -74,6 +76,13 @@ public class SongManager : MonoBehaviour
         GetDataFromMidi();
     }
 
+    private void ReadFromFileNone()
+    {
+        CreateFileNone();
+        midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + "None.mid");
+        GetDataFromMidi();
+    }
+
     public void GetDataFromMidi()
     {
         var notes = midiFile.GetNotes();
@@ -84,6 +93,39 @@ public class SongManager : MonoBehaviour
             lane.SetTimeStamps(array);
 
         Invoke(nameof(StartSong), songDelayInSeconds);
+    }
+
+    public void CreateFileNone()
+    {
+        var midiFile = new MidiFile();
+        TempoMap tempoMap = midiFile.GetTempoMap();
+
+        for (int i = 0; i < 10; ++i)
+        {
+        var trackChunk = new TrackChunk();
+        using (var notesManager = trackChunk.ManageNotes())
+        {
+            NotesCollection notes = notesManager.Notes;
+            notes.Add(new Melanchall.DryWetMidi.Interaction.Note(
+                0,
+                3,
+                LengthConverter.ConvertFrom(
+                    new MetricTimeSpan(hours: 0, minutes: 0, seconds: 1),
+                    0,
+                    tempoMap)));
+
+            notes.Add(new Melanchall.DryWetMidi.Interaction.Note(
+                0,
+                3,
+                LengthConverter.ConvertFrom(
+                    new MetricTimeSpan(hours: 0, minutes: 0, seconds: 1),
+                    0,
+                    tempoMap)));
+        }
+        midiFile.Chunks.Add(trackChunk);
+        }
+
+        midiFile.Write(Application.streamingAssetsPath + "/" + "None.mid", true);
     }
 
     public void StartSong()

@@ -10,7 +10,7 @@ public class Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private Sprite onCursorImg;
     [SerializeField] private Sprite offCursorImg;
     private Image backgroundImg;
-
+    public AudioSource audioSource;
 
 
     void Start()
@@ -30,5 +30,10 @@ public class Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData evenData)
     {
         backgroundImg.sprite = offCursorImg;
+    }
+
+    public void OnClick()
+    {
+        audioSource.Play();
     }
 }

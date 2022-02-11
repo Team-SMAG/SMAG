@@ -10,8 +10,9 @@ public class Note : MonoBehaviour
     public string expression = "";
     public short[] answers;
     public short idx;
-
     public double gameSpeed = 4.0f;
+
+
 
     void Start()
     {

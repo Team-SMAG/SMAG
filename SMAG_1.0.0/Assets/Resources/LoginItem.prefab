@@ -366,6 +366,7 @@ MonoBehaviour:
   popupWindowObject: {fileID: 0}
   onCursorImg: {fileID: 21300000, guid: e8928b8545ce1184caa62ae6d07c659e, type: 3}
   offCursorImg: {fileID: 21300000, guid: 78e393b4bb35c6445a607f8fcc70edfe, type: 3}
+  audioSource: {fileID: 8872464720973442219, guid: d5823af13b144214b8de3f08049ab497, type: 3}
 --- !u!1 &6075706743300368695
 GameObject:
   m_ObjectHideFlags: 0

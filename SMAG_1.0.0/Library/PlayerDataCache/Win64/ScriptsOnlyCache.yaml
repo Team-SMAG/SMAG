@@ -90,33 +90,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1530}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 2004}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 4040}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 23002}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 23024}
+      Script: {instanceID: 3692}
     - Class: 114
-      Script: {instanceID: 23026}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 23042}
+      Script: {instanceID: 5626}
     - Class: 114
-      Script: {instanceID: 23054}
+      Script: {instanceID: 5852}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,66 +156,70 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1530}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 1676}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2004}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2348}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 2666}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3062}
     - Class: 114
-      Script: {instanceID: 4514}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 4720}
+      Script: {instanceID: 3116}
     - Class: 114
-      Script: {instanceID: 4858}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 23004}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 23006}
+      Script: {instanceID: 3692}
     - Class: 114
-      Script: {instanceID: 23010}
+      Script: {instanceID: 3926}
     - Class: 114
-      Script: {instanceID: 23022}
+      Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 23028}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 23030}
+      Script: {instanceID: 4790}
     - Class: 114
-      Script: {instanceID: 23032}
+      Script: {instanceID: 5004}
     - Class: 114
-      Script: {instanceID: 23034}
+      Script: {instanceID: 5150}
     - Class: 114
-      Script: {instanceID: 23038}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 23044}
+      Script: {instanceID: 5730}
     - Class: 114
-      Script: {instanceID: 23056}
+      Script: {instanceID: 6046}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,16 +239,28 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
+      Hash: bc8d0afeebc008570ffede5254e873af
+    assemblyName: GoogleMobileAds.Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -283,6 +299,12 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
+      Hash: fd3a31164ca04fbca4b45fb344c6d5d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OptionSettings
+  - hash:
+      serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -313,6 +335,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: c6327f02ddbe89725b9747fe5e474c1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackView
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -323,12 +351,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -349,16 +371,46 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 189156700ba24508fe8f2b0e6135033e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoginView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameSettings
+  - hash:
+      serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: IKManager2D
   - hash:
       serializedVersion: 2
+      Hash: a0181b624cf9da7fac6455d0755f9166
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RankDetailView
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: fd3a31164ca04fbca4b45fb344c6d5d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RankDetailSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 91a25642a6f07e473400dc425d745ef4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Note
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -391,10 +443,22 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 312a27418c039074482ed202a9477908
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TabButton
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Utils
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -437,6 +501,24 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 75be75e01757a90c31a5dccee9e94772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SongManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.Common.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 99455baebc1f7509b643e8b131a21e3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -527,6 +609,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 3938a1065e06cd6ee276296e40e0655e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RankView
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -709,10 +797,28 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 8becfd53155fce47b2fe38fabd021ddb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 2113e23e56186b8b13f3cf08ed1afddb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Hover
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: BufferManager
+  - hash:
+      serializedVersion: 2
+      Hash: 139b921d93bf08d196ab48dda3b7c983
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Lane
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -725,6 +831,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9f8404faabedda99a9eb885946e38c1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TabPanel
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -743,116 +855,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.Common.dll
-    namespaceName: GoogleMobileAds.Common
-    className: MobileAdsEventExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 8becfd53155fce47b2fe38fabd021ddb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 312a27418c039074482ed202a9477908
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TabButton
-  - hash:
-      serializedVersion: 2
-      Hash: a0181b624cf9da7fac6455d0755f9166
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RankDetailView
-  - hash:
-      serializedVersion: 2
-      Hash: bc8d0afeebc008570ffede5254e873af
-    assemblyName: GoogleMobileAds.Editor.dll
-    namespaceName: GoogleMobileAds.Editor
-    className: GoogleMobileAdsSettings
-  - hash:
-      serializedVersion: 2
-      Hash: fd3a31164ca04fbca4b45fb344c6d5d0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RankDetailSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 75be75e01757a90c31a5dccee9e94772
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SongManager
-  - hash:
-      serializedVersion: 2
-      Hash: 91a25642a6f07e473400dc425d745ef4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Note
-  - hash:
-      serializedVersion: 2
-      Hash: 3938a1065e06cd6ee276296e40e0655e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RankView
-  - hash:
-      serializedVersion: 2
-      Hash: ad67362a9de134a5f588b59bfbd9ea02
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Hover
-  - hash:
-      serializedVersion: 2
-      Hash: 9f8404faabedda99a9eb885946e38c1e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TabPanel
-  - hash:
-      serializedVersion: 2
-      Hash: 189156700ba24508fe8f2b0e6135033e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoginView
-  - hash:
-      serializedVersion: 2
-      Hash: c6327f02ddbe89725b9747fe5e474c1d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TrackView
-  - hash:
-      serializedVersion: 2
-      Hash: 99455baebc1f7509b643e8b131a21e3f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScoreManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Utils
-  - hash:
-      serializedVersion: 2
-      Hash: 139b921d93bf08d196ab48dda3b7c983
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Lane
-  - hash:
-      serializedVersion: 2
-      Hash: fd3a31164ca04fbca4b45fb344c6d5d0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OptionSettings
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Game Play.unity
-  playerPath: C:/Users/jdh3385/Desktop/SMAG_PC/SMAG_1.0.0.exe
+  playerPath: C:/Users/Althea/Desktop/SMAGAPP.exe

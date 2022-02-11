@@ -8,6 +8,7 @@ using UnityEngine.Networking;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Threading;
+
 public class Lane : MonoBehaviour
 {
     public Melanchall.DryWetMidi.MusicTheory.NoteName noteRestriction;
@@ -29,8 +30,9 @@ public class Lane : MonoBehaviour
 	private QuestionInfo qinfo;    //결과화면 관련변수 : 현재 노트에 블록 idx 값이 없어 1로 하드코딩 상태
     private ResultInfo resultInfo;
 	private QuestionList questionList;    //문제에 대한 정보를 담은 리스트
+    private short questionSize;    //문제 개수
 
-    //private double marginOfError = 1.0f;
+
 
     void Awake()
     {
@@ -48,7 +50,7 @@ public class Lane : MonoBehaviour
             { "D", 2 }, { "d", 2 }, { "ㅇ", 0 },
             { "F", 3 }, { "f", 3 }, { "ㄹ", 0 },
         };
-       
+        
         buttons = new Dictionary<short, GameObject>
         {
             { 0, GameObject.Find("Button 0") }, 
@@ -75,6 +77,11 @@ public class Lane : MonoBehaviour
         {  
             GameOver((int)SongManager.GetAudioSourceTime(), inputIndex, true);
         }
+        
+        if (spawnIndex > 0 && questionList.resultData.Length == questionIndex)
+        {
+            GameOver((int)SongManager.GetAudioSourceTime(), questionIndex, true);
+        }
 
         //Create Note
         if (spawnIndex < timeStamps.Count)
@@ -91,18 +98,18 @@ public class Lane : MonoBehaviour
                 int difficulty = Int32.Parse(trackInfo.transform.GetChild(2).GetComponent<Text>().text);
                 if (difficulty == 1)
                 {
-                    note.GetComponent<Note>().gameSpeed = 4.0f;
-                    SongManager.Instance.marginOfError = 1.3f;
+                    note.GetComponent<Note>().gameSpeed = 5.0f;
+                    SongManager.Instance.marginOfError = 1.6f;
                 }
                 else if (difficulty == 2)
                 {
-                    note.GetComponent<Note>().gameSpeed = 3.0f;
-                    SongManager.Instance.marginOfError = 0.9f;
+                    note.GetComponent<Note>().gameSpeed = 4.0f;
+                    SongManager.Instance.marginOfError = 1.3f;
                 }
                 else
                 {
-                    note.GetComponent<Note>().gameSpeed = 2.0f;
-                    SongManager.Instance.marginOfError = 0.4f;
+                    note.GetComponent<Note>().gameSpeed = 3.0f;
+                    SongManager.Instance.marginOfError = 1.0f;
                 }
                 ++spawnIndex;
             }
@@ -141,11 +148,16 @@ public class Lane : MonoBehaviour
                         Destroy(notes[inputIndex].gameObject);
                         ++inputIndex;
                         ++questionIndex;
+                        if (questionList.resultData.Length == questionIndex)
+                        {
+                            GameOver((int)SongManager.GetAudioSourceTime(), questionIndex, true);
+                        }
                     }
                 }
             }
 
             /* For Mobile */
+            /*
             if (Input.touchCount > 0)
             {
                 switch (Input.GetTouch(0).phase)
@@ -157,6 +169,7 @@ public class Lane : MonoBehaviour
                         break;
                 }
             }
+            */
 
             //Miss
             if (audioTime - timeStamp > marginOfError)
@@ -220,11 +233,10 @@ public class Lane : MonoBehaviour
 		string key = notes[questionIndex].GetComponent<Note>().idx.ToString();
 		int value;
 		value = 1;	
-		if(qinfo.questionMap.ContainsKey(key)){
+		if (qinfo.questionMap.ContainsKey(key))
 			value = qinfo.questionMap[key] + 1;
-		}
-		qinfo.questionMap.Add(key, value);
-		Debug.Log("key : "+key+", value : "+value);
+		else 
+            qinfo.questionMap.Add(key, value);
     }
 
     private void Miss()
@@ -233,11 +245,10 @@ public class Lane : MonoBehaviour
 		string key = notes[questionIndex].GetComponent<Note>().idx.ToString();
 		int value;
 		value = -1;	
-		if(qinfo.questionMap.ContainsKey(key)){
+		if (qinfo.questionMap.ContainsKey(key))
 			value = qinfo.questionMap[key] - 1;
-		}
-		qinfo.questionMap.Add(key, value);
-		Debug.Log("key : "+key+", value : "+value);
+        else
+		    qinfo.questionMap.Add(key, value);
         GameOver((int)SongManager.GetAudioSourceTime(), inputIndex, false);
     }
 
@@ -284,7 +295,6 @@ public class Lane : MonoBehaviour
         resultInfo.collectCount = collectCount;
         resultInfo.isClear = isClear;
         string json = JsonConvert.SerializeObject(qinfo);
-        Debug.Log(json);
         gameManager.GetComponent<GameManager>().GetQuestionResult(json, resultInfo);
         gameObject.SetActive(false);
     }
